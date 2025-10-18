@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MONERA — IT 634 Portfolio</title>
+  <meta name="description" content="Portfolio of Glyza Mae Maligao — projects, education, experience, and laboratory activities." />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="header-container">
+      <a class="brand" href="#top">
+        <div class="logo">GM</div>
+        <div class="brand-text">
+          <div class="brand-name">TRISHA MAY MONERA</div>
+          <div class="brand-sub">Web Development</div>
+        </div>
+      </a>
+
+      <button id="sidebarToggle" class="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="sidebarNav">
+        <a href="#top" class="nav-link active">Home</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#labs" class="nav-link">Labs</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content" id="mainContent">
+
+    <section class="panel hero-panel" id="top">
+      <div class="hero-left">
+        <div class="eyebrow">IT 634 • Portfolio</div>
+        <h1 class="hero-title">
+          Hi, I'm <span class="accent-text">Trisha</span><br>
+          I design and build <span class="accent-text">modern web experiences</span>.
+        </h1>
+        <p class="lead">Explore my projects, education, experience, and IT 634 laboratory activities below.</p>
+        <div class="hero-buttons">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn ghost" href="#labs">View Labs</a>
+        </div>
+      </div>
+
+      <aside class="hero-right profile-card" aria-label="Profile card">
+        <img class="avatar" alt="Glyza Mae Maligao portrait" src="trish.jpeg" />
+        <h3 class="profile-name">Trisha May L. Monera</h3>
+        <p class="muted">Back-end Developer</p>
+      </aside>
+    </section>
+
+    <section id="projects" class="panel section">
+      <div class="panel-header">
+        <h3>Projects</h3>
+        <p class="muted">Selected works and class projects</p>
+      </div>
+      <div class="projects-grid" id="projectsGrid"></div>
+    </section>
+
+    <section id="education" class="panel section">
+      <div class="panel-header">
+        <h3>Education</h3>
+      </div>
+      <div class="grid two-col">
+        <article class="card">
+          <h4>College — Diploma in Information Technology</h4>
+          <div class="muted">Davao del Sur State College — 2025–2026</div>
+        </article>
+        <article class="card">
+          <h4>Senior High School — TVL (css)</h4>
+          <div class="muted">Looc National Highschool — 2022–2023</div>
+        </article>
+        <article class="card">
+          <h4>High School</h4>
+          <div class="muted">F.bangoy National Highscool— 2020–2021</div>
+        </article>
+        <article class="card">
+          <h4>Elementary</h4>
+          <div class="muted">Osmena Elementary School — 2016–2017</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="panel section">
+      <div class="panel-header">
+        <h3>Experience</h3>
+      </div>
+      <div class="grid one-col">
+        <article class="card">
+          <h4>Intern — REGISTRAR</h4>
+          <div class="muted">Davao del Sur State College — July 2025–August 2026</div>
+          <p>My experience in helping with student information and enrollment for incoming first-year students was both rewarding and meaningful. I learned how important clear communication and understanding are because many new students feel nervous about the process. Assisting in different steps, like checking documents and choosing courses, improved my organization and attention to detail. This experience also helped me understand how the university’s system works. I am thankful for the chance to be part of welcoming and guiding new students as they begin their college journey.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="labs" class="panel section">
+      <div class="panel-header">
+        <h3>Laboratory Activities</h3>
+      </div>
+      <div class="labs-grid" id="labsGrid"></div>
+    </section>
+
+    <section id="contact" class="panel section">
+      <div class="panel-header">
+        <h3>Contact</h3>
+      </div>
+      <div class="contact-grid">
+        <form id="contactForm" class="contact-form" action="https://formspree.io/f/xpwyyooq" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Type your message..." rows="5" required></textarea>
+          </div>
+          <button class="btn primary" type="submit">Send Message</button>
+          <p id="formMsg" class="muted small"></p>
+        </form>
+
+        <aside class="contact-card">
+          <div class="card">
+            <h4>Get in Touch</h4>
+            <p class="muted">Email: <a href="mailto:trishamonera057@gmail.com">trishamonera057@gmail.com</a></p>
+            <p class="muted">Phone: +63 991 271 1009</p>
+             <div class="social-links">
+                <a href="mailto:glyzamaemaligao@gmail.com" title="Email">✉️</a>
+                <a href="https://github.com/kingrey020" target="_blank" title="GitHub">💻</a>
+                <a href="https://www.facebook.com/GlyzaMae0" target="_blank" title="Facebook">🔗</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+        © 2025 Monera — IT 634 Portfolio
+    </footer>
+
+  </main>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true">
+      <button class="close-btn" id="closeModal" aria-label="Close">✕</button>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<div class="wave"></div>
+<div class="wave"></div>
+<div class="wave"></div>
