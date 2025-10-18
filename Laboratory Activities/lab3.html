@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity 2</title>
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background: linear-gradient(135deg, #63164d, #082350); /* pastel gradient */
+    }
+
+    .profile {
+      text-align: center;
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+      width: 280px;
+      transition: transform 0.3s ease;
+    }
+
+    .profile:hover {
+      transform: scale(1.05);
+    }
+
+    .profile img {
+      width: 90px;   /* smaller size */
+      height: 90px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      border: 3px solid #f08080; /* border design */
+      object-fit: cover;
+    }
+
+    .profile h1 {
+      font-size: 20px;
+      margin-bottom: 8px;
+      color: #333;
+    }
+
+    .profile p {
+      font-size: 14px;
+      color: #555;
+      margin: 0 0 10px 0;
+    }
+
+    #btn-aboutme {
+      background-color: chocolate;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 15px;
+      cursor: pointer;
+      border-radius: 8px;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    #btn-aboutme:hover {
+      background-color: coral;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    #info {
+      margin-top: 15px;
+      color: black;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="profile">
+    <img src="trish.jpeg" alt="Lovely Joy">
+    <h1>Trisha May Monera</h1>
+    <p><em>"IF YOU CAN DREAM IT, YOU CAN ACHIEVE IT."</em></p>
+
+    <button id="btn-aboutme">ABOUT ME</button>
+    <div id="info" class="hide">
+      <p>I am a self-made programmer. My passion runs through my blood.</p>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const btnAboutme = document.getElementById("btn-aboutme");
+      const divAboutme = document.getElementById("info");
+
+      btnAboutme.addEventListener("click", function () {
+        if (divAboutme.classList.contains("hide")) {
+          divAboutme.classList.remove("hide");
+          btnAboutme.textContent = "Show Less";
+        } else {
+          divAboutme.classList.add("hide");
+          btnAboutme.textContent = "ABOUT ME";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
