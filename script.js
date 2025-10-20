@@ -13,7 +13,7 @@ const PROJECTS = [
   {
     title: "Portfolio Website",
     desc: "My personal responsive portfolio built using vanilla JS and CSS grid.",
-    imgs: ["project.jpeg"]
+    imgs: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSblfREDbCtaqLA15R4-ya8aywHr0q0fo6YQw&s"]
   }
 ];
 
@@ -206,5 +206,3 @@ window.addEventListener('load', () => {
     window.dispatchEvent(evt);
   }, 300);
 });
-
-
