@@ -44,7 +44,7 @@ const LABS = [
   { title:'Lab Activity 2', desc:'CSS Styling and Layout', link:'Laboratory Activities/lab2.html', thumb:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5l8aQJiPJmMagK5bx_FwCmqjUsdUEVDLnVKm7DXQ-0PIv3-lCe_dAlcYwPtwuDOJz2wU&usqp=CAU' },
   { title:'Lab Activity 3', desc:'JavaScript DOM Manipulation', link:'Laboratory Activities/lab3.html', thumb:'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAL0AAAELCAMAAAC77XfeAAAAA1BMVEV33XcMMxzCAAAASElEQVR4nO3BMQEAAADCoPVPbQ0PoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADeDcYqAAE00FRDAAAAAElFTkSuQmCC' },
   { title:'Lab Activity 4', desc:'card hover', link:'Laboratory Activities/lab4.html', thumb:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7qa4ZET6H1mVzi8sFftJhvmHWfqwaPlc75A&s' },
-  { title:'Lab Activity 5', desc:'toggle button', link:'Laboratory Activities/lab1.html', thumb:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5dtDehAqhYEwx42QjRi9LDAVgMtsY3ZoHxA&s' },
+  { title:'Lab Activity 5', desc:'toggle button', link:'Laboratory Activities/lab5.html', thumb:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5dtDehAqhYEwx42QjRi9LDAVgMtsY3ZoHxA&s' },
  
 ];
 
@@ -206,3 +206,4 @@ window.addEventListener('load', () => {
     window.dispatchEvent(evt);
   }, 300);
 });
+
